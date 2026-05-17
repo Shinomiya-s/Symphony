@@ -10,51 +10,51 @@ Symphony is a full-stack web application that combines real-time collaboration, 
 
 ### Home
 
-![屏幕截图 2026-04-26 143803](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-04-26 143803.png)
+![home](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\home.png)
 
 ### Login
 
-![登录注册](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\登录注册.png)
+![login](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\login.png)
 
 ### Study Partner Chat
 
-![微信图片_20260414231722_606_22](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\微信图片_20260414231722_606_22.jpg)
+![chat](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\chat.jpg)
 
 ### Mistake Archive
 
-![屏幕截图 2026-04-26 145429](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-04-26 145429.png)
+![mistake-archive](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\mistake-archive.png)
 
 ### AI Analysis & Practice Problems
 
-![微信图片_20260414215459_593_22](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\微信图片_20260414215459_593_22.jpg)
+![ai-analysis](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\ai-analysis.jpg)
 
 ### Knowledge Garden
 
-![屏幕截图 2026-03-21 233010](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-03-21 233010.png)
+![knowledge-garden](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\knowledge-garden.png)
 
 ### Knowledge Entry Detail
 
-![屏幕截图 2026-03-21 233103](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-03-21 233103.png)
+![knowledge-detail](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\knowledge-detail.png)
 
 ### Collaborative Document
 
-![屏幕截图 2026-04-26 144834](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-04-26 144834.png)
+![collab-doc](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\collab-doc.png)
 
 ### Document Archive
 
-![屏幕截图 2026-04-26 144844](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-04-26 144844.png)
+![doc-archive](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\doc-archive.png)
 
 ### Daily AI Report
 
-![微信图片_20260414220008_596_22](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\微信图片_20260414220008_596_22.jpg)
+![daily-report](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\daily-report.jpg)
 
 ### Personal AI Dashboard
 
-![屏幕截图 2026-05-11 220536](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-05-11 220536.png)
+![ai-dashboard](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\ai-dashboard.png)
 
 ### Drawing Whiteboard
 
-![屏幕截图 2026-04-26 150107](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\屏幕截图 2026-04-26 150107.png)
+![whiteboard](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\whiteboard.png)
 
 ------
 
