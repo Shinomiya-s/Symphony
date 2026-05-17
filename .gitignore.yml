@@ -1,0 +1,13 @@
+# 敏感配置
+backend/src/main/resources/application.yml
+
+# 后端编译产物
+backend/target/
+
+# 前端依赖
+frontend/node_modules/
+
+# IDE
+.idea/
+*.iml
+.vscode/
