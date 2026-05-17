@@ -10,51 +10,51 @@ Symphony is a full-stack web application that combines real-time collaboration, 
 
 ### Home
 
-![home](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\home.png)
+![home](./docs/screenshots/home.png)
 
 ### Login
 
-![login](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\login.png)
+![login](./docs/screenshots/login.png)
 
 ### Study Partner Chat
 
-![chat](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\chat.jpg)
+![chat](./docs/screenshots/chat.jpg)
 
 ### Mistake Archive
 
-![mistake-archive](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\mistake-archive.png)
+![mistake-archive](./docs/screenshots/mistake-archive.png)
 
 ### AI Analysis & Practice Problems
 
-![ai-analysis](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\ai-analysis.jpg)
+![ai-analysis](./docs/screenshots/ai-analysis.jpg)
 
 ### Knowledge Garden
 
-![knowledge-garden](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\knowledge-garden.png)
+![knowledge-garden](./docs/screenshots/knowledge-garden.png)
 
 ### Knowledge Entry Detail
 
-![knowledge-detail](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\knowledge-detail.png)
+![knowledge-detail](./docs/screenshots/knowledge-detail.png)
 
 ### Collaborative Document
 
-![collab-doc](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\collab-doc.png)
+![collab-doc](./docs/screenshots/collab-doc.png)
 
 ### Document Archive
 
-![doc-archive](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\doc-archive.png)
+![doc-archive](./docs/screenshots/doc-archive.png)
 
 ### Daily AI Report
 
-![daily-report](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\daily-report.jpg)
+![daily-report](./docs/screenshots/daily-report.jpg)
 
 ### Personal AI Dashboard
 
-![ai-dashboard](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\ai-dashboard.png)
+![ai-dashboard](./docs/screenshots/ai-dashboard.png)
 
 ### Drawing Whiteboard
 
-![whiteboard](D:\CS\26年大学生计算机应用能力大赛\Symphony\docs\screenshots\whiteboard.png)
+![whiteboard](./docs/screenshots/whiteboard.png)
 
 ------
 
