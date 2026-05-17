@@ -1,0 +1,1435 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  icon_type: emoji
+  mode: advanced-chat
+  name: symphony
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.1.34@a3a90f3034b884bb215b8770af24ecd6145cfd5b6ab97f9e40c3143cbe3ccd34
+    version: null
+kind: app
+version: 0.6.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        attachment_image_file_size_limit: 2
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        file_upload_limit: 50
+        image_file_batch_limit: 10
+        image_file_size_limit: 10
+        single_chunk_attachment_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: if-else
+      id: 1770699428691-source-1770703696614-target
+      selected: false
+      source: '1770699428691'
+      sourceHandle: source
+      target: '1770703696614'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-b79cb651-a0f0-4496-a542-1d72b608b895-1770705698490-target
+      selected: false
+      source: '1770703696614'
+      sourceHandle: b79cb651-a0f0-4496-a542-1d72b608b895
+      target: '1770705698490'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 1770703696614-false-1770705700464-target
+      selected: false
+      source: '1770703696614'
+      sourceHandle: 'false'
+      target: '1770705700464'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: if-else
+      id: 1770703696614-true-1770706471552-target
+      source: '1770703696614'
+      sourceHandle: 'true'
+      target: '1770706471552'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770706471552-7ba94ee0-5cc4-4622-baeb-eb52b21779c9-1770707610741-target
+      source: '1770706471552'
+      sourceHandle: 7ba94ee0-5cc4-4622-baeb-eb52b21779c9
+      target: '1770707610741'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: answer
+      id: 1770706471552-false-1770707746717-target
+      source: '1770706471552'
+      sourceHandle: 'false'
+      target: '1770707746717'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-a0311c25-f314-4ef6-b1bd-5630699925d9-1770709407016-target
+      source: '1770703696614'
+      sourceHandle: a0311c25-f314-4ef6-b1bd-5630699925d9
+      target: '1770709407016'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-2addcbd6-ac88-431e-976c-0d84307ff8b8-1772196280670-target
+      source: '1770703696614'
+      sourceHandle: 2addcbd6-ac88-431e-976c-0d84307ff8b8
+      target: '1772196280670'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-2a27c692-122d-4459-8b19-465ed04b4366-1772278014487-target
+      source: '1770703696614'
+      sourceHandle: 2a27c692-122d-4459-8b19-465ed04b4366
+      target: '1772278014487'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-b821528d-9870-4854-9581-c8cf0e52f11b-1772521323366-target
+      source: '1770703696614'
+      sourceHandle: b821528d-9870-4854-9581-c8cf0e52f11b
+      target: '1772521323366'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-ee408088-e26d-47c4-aba7-7ecf4b224890-1772523976463-target
+      source: '1770703696614'
+      sourceHandle: ee408088-e26d-47c4-aba7-7ecf4b224890
+      target: '1772523976463'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-f02ff41e-c811-4a96-af56-7db5eb9abacd-1772885108364-target
+      source: '1770703696614'
+      sourceHandle: f02ff41e-c811-4a96-af56-7db5eb9abacd
+      target: '1772885108364'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-1c884f89-0276-4bc5-8fd1-512353e6b976-1772896624772-target
+      source: '1770703696614'
+      sourceHandle: 1c884f89-0276-4bc5-8fd1-512353e6b976
+      target: '1772896624772'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-a7b6d0db-f84b-4810-bf90-a8b805ab8909-1772902005650-target
+      source: '1770703696614'
+      sourceHandle: a7b6d0db-f84b-4810-bf90-a8b805ab8909
+      target: '1772902005650'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1770703696614-2988c8f3-a53d-4139-b6fd-499810bfe45b-1773549712447-target
+      source: '1770703696614'
+      sourceHandle: 2988c8f3-a53d-4139-b6fd-499810bfe45b
+      target: '1773549712447'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1774340463190-source-1770707216073-target
+      source: '1774340463190'
+      sourceHandle: source
+      target: '1770707216073'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: knowledge-retrieval
+      id: 1770706471552-true-1774340463190-target
+      source: '1770706471552'
+      sourceHandle: 'true'
+      target: '1774340463190'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: knowledge-retrieval
+      id: 1770706471552-9cc0a5da-ff93-4e07-8bd6-2dc1a781f197-1774759057812-target
+      source: '1770706471552'
+      sourceHandle: 9cc0a5da-ff93-4e07-8bd6-2dc1a781f197
+      target: '1774759057812'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1774759057812-source-1770707364219-target
+      source: '1774759057812'
+      sourceHandle: source
+      target: '1770707364219'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        selected: false
+        title: 用户输入
+        type: start
+        variables:
+        - default: ''
+          hint: ''
+          label: chatMode
+          options: []
+          placeholder: ''
+          required: true
+          type: text-input
+          variable: chatMode
+        - default: ''
+          hide: false
+          hint: ''
+          label: singleType
+          options: []
+          placeholder: ''
+          required: false
+          type: text-input
+          variable: singleType
+        - default: ''
+          hide: false
+          hint: ''
+          label: prompt
+          max_length: 5000
+          options: []
+          placeholder: ''
+          required: false
+          type: paragraph
+          variable: prompt
+        - default: ''
+          hint: ''
+          label: userId
+          options: []
+          placeholder: ''
+          required: false
+          type: text-input
+          variable: userId
+      height: 186
+      id: '1770699428691'
+      position:
+        x: 0
+        y: 314.8513016450029
+      positionAbsolute:
+        x: 0
+        y: 314.8513016450029
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 242
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is
+            id: 8ba49d37-0c23-418e-9c13-aeb85df959b6
+            value: single
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: 'true'
+          logical_operator: and
+        - case_id: b79cb651-a0f0-4496-a542-1d72b608b895
+          conditions:
+          - comparison_operator: is
+            id: 7e17ba9e-11a4-440b-a9ab-9bc79154b61e
+            value: dual_with_ai
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: b79cb651-a0f0-4496-a542-1d72b608b895
+          logical_operator: and
+        - case_id: a0311c25-f314-4ef6-b1bd-5630699925d9
+          conditions:
+          - comparison_operator: is
+            id: b02dab81-7e50-4deb-8b43-480143953f79
+            value: knowledgeReview
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: a0311c25-f314-4ef6-b1bd-5630699925d9
+          logical_operator: and
+        - case_id: 2addcbd6-ac88-431e-976c-0d84307ff8b8
+          conditions:
+          - comparison_operator: is
+            id: 7abd87bf-9810-4980-8cc3-2645c22a3aef
+            value: mistakeAnalysis
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: 2addcbd6-ac88-431e-976c-0d84307ff8b8
+          logical_operator: and
+        - case_id: 2a27c692-122d-4459-8b19-465ed04b4366
+          conditions:
+          - comparison_operator: is
+            id: e9da042e-7b57-410a-9b20-af4ee1553b84
+            value: practiceGenerate
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: 2a27c692-122d-4459-8b19-465ed04b4366
+          logical_operator: and
+        - case_id: b821528d-9870-4854-9581-c8cf0e52f11b
+          conditions:
+          - comparison_operator: is
+            id: d7d4eaa7-4893-4148-a5e1-afb3ded4559e
+            value: dailyReport
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: b821528d-9870-4854-9581-c8cf0e52f11b
+          logical_operator: and
+        - case_id: ee408088-e26d-47c4-aba7-7ecf4b224890
+          conditions:
+          - comparison_operator: is
+            id: d061df55-de08-4993-994c-3de5e52d77b2
+            value: chatRecommend
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: ee408088-e26d-47c4-aba7-7ecf4b224890
+          logical_operator: and
+        - case_id: f02ff41e-c811-4a96-af56-7db5eb9abacd
+          conditions:
+          - comparison_operator: is
+            id: 14330668-1eb9-4504-a14e-e94fc22b2f30
+            value: mistakeDetect
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: f02ff41e-c811-4a96-af56-7db5eb9abacd
+          logical_operator: and
+        - case_id: 1c884f89-0276-4bc5-8fd1-512353e6b976
+          conditions:
+          - comparison_operator: is
+            id: 489989f5-64d6-4812-a320-c3e8c5f54e94
+            value: knowledgeGarden
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: 1c884f89-0276-4bc5-8fd1-512353e6b976
+          logical_operator: and
+        - case_id: a7b6d0db-f84b-4810-bf90-a8b805ab8909
+          conditions:
+          - comparison_operator: is
+            id: a0a35fcf-a57b-4480-bd2c-f84115f4206c
+            value: collabSummary
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: a7b6d0db-f84b-4810-bf90-a8b805ab8909
+          logical_operator: and
+        - case_id: 2988c8f3-a53d-4139-b6fd-499810bfe45b
+          conditions:
+          - comparison_operator: is
+            id: 63e915d2-d4a1-42d1-9b62-e4d54d6d5827
+            value: duplicateCheck
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - chatMode
+          id: 2988c8f3-a53d-4139-b6fd-499810bfe45b
+          logical_operator: and
+        selected: false
+        title: 判断聊天类型
+        type: if-else
+      height: 867
+      id: '1770703696614'
+      position:
+        x: 305.5114458815574
+        y: 289.7865386111386
+      positionAbsolute:
+        x: 305.5114458815574
+        y: 289.7865386111386
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: e2dd0a7a-460a-4911-9ebe-42e64c5460ed
+          role: system
+          text: '你是一个双人学习聊天室的智能复盘助手。
+
+            职责：
+
+            根据以下聊天记录，提炼本次讨论涉及的学习内容，用自然流畅的语言写成一句话摘要。
+
+            判断规则：
+
+            - 涉及技术、编程、课程知识、概念讨论，均视为学习内容
+
+            - 明显闲聊（吃饭、天气、游戏、情绪）视为非学习内容
+
+            输出规则：
+
+            - 若存在学习内容：输出一句自然的总结，不超过50字，不加任何前缀标签
+
+            - 若无任何学习内容：仅输出"暂无学习内容"
+
+            - 只允许一行，不允许换行，不允许额外解释
+
+            示例输出：
+
+            本次讨论涉及Redis缓存双写策略的设计思路，以及如何通过TTL自动过期替代定时清空方案。'
+        reasoning_format: separated
+        selected: false
+        structured_output_enabled: true
+        title: 双人聊天ai
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1770705698490'
+      position:
+        x: 703
+        y: 230.30984390225674
+      positionAbsolute:
+        x: 703
+        y: 230.30984390225674
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: 非法类型
+        selected: false
+        title: 错误类型默认回复
+        type: answer
+        variables: []
+      height: 99
+      id: '1770705700464'
+      position:
+        x: 703
+        y: 1208.7581732374508
+      positionAbsolute:
+        x: 703
+        y: 1208.7581732374508
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: is
+            id: 20c26c50-d48f-4b27-901f-0e1108a62894
+            value: algorithmAssistant
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - singleType
+          id: 'true'
+          logical_operator: and
+        - case_id: 9cc0a5da-ff93-4e07-8bd6-2dc1a781f197
+          conditions:
+          - comparison_operator: is
+            id: bee44e9b-30b5-454b-bba8-750227a7aa92
+            value: EnglishPartner
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - singleType
+          id: 9cc0a5da-ff93-4e07-8bd6-2dc1a781f197
+          logical_operator: and
+        - case_id: 7ba94ee0-5cc4-4622-baeb-eb52b21779c9
+          conditions:
+          - comparison_operator: is
+            id: 52363bd5-e1fa-47ce-8ba5-b5bfd1a50329
+            value: selfCreate
+            varType: string
+            variable_selector:
+            - '1770699428691'
+            - singleType
+          id: 7ba94ee0-5cc4-4622-baeb-eb52b21779c9
+          logical_operator: and
+        selected: false
+        title: 判断私聊AI类型
+        type: if-else
+      height: 291
+      id: '1770706471552'
+      position:
+        x: 703
+        y: -81.8433505931437
+      positionAbsolute:
+        x: 703
+        y: -81.8433505931437
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1774340463190'
+          - result
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 05b1876c-e593-421f-9886-6f160c068f7d
+          role: system
+          text: '你是一名专注于计算机领域的学习助手，核心服务对象是学习计算机相关知识的学生，仅解答计算机与编程领域的专业问题。
+
+            以下为参考资料:{{#context#}}}
+
+            【核心服务边界】
+
+            1. 仅响应计算机领域相关问题，覆盖范围：算法与数据结构、编程语言开发、操作系统、计算机网络、数据库、计算机组成原理、软件工程等计算机专业相关内容
+
+            2. 若提问超出上述计算机专业领域范围，统一回复：「抱歉，我仅能解答计算机与编程相关的专业问题」
+
+            3. 不进行任何无关闲聊，不发表与专业问题无关的个人情绪、观点及评价
+
+
+            【回答规范】
+
+            1. 回答始终以学生学习为核心，简洁直接，逻辑清晰
+
+            2. 优先给出核心解题思路、关键结论与核心知识点
+
+            3. 不输出与问题无关的冗余内容，不偏离提问核心
+
+            4. 专业内容准确严谨，贴合在校学生的学习理解节奏
+
+
+            请始终严格遵守以上规则执行。'
+        reasoning_format: separated
+        selected: false
+        structured_output_enabled: false
+        title: 算法助手
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1770707216073'
+      position:
+        x: 1384.9602316417938
+        y: -19.859833633730204
+      positionAbsolute:
+        x: 1384.9602316417938
+        y: -19.859833633730204
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1774759057812'
+          - result
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 112aa845-f517-47ba-881e-167c415225d7
+          role: system
+          text: '你是一个英语训练伙伴。
+
+
+            目标：
+
+            帮助用户练习英语交流能力。
+
+            语言规则：
+
+            1. 优先使用英语回答
+
+            2. 只有在用户明显听不懂或要求中文解释时，才允许使用中文辅助说明
+
+            3. 不要主动切换成纯中文回答
+
+
+            难度规则：
+
+            1. 如果用户使用简单英语或短句，使用简单词汇和短句回答
+
+            2. 如果用户使用复杂句或专业词汇，使用更自然、完整的英语回答
+
+            3. 难度始终略高于用户当前水平，但不能明显超出
+
+
+            教学规则：
+
+            1. 可以适度改写用户句子，使其更自然
+
+            2. 可以在结尾给出一句简短改进建议
+
+            3. 不要长篇讲语法
+
+
+            以下为参考资料:{{#context#}}}
+
+            始终以“英语对话练习伙伴”的身份回答。
+
+            '
+        reasoning_format: separated
+        selected: false
+        title: 英语伙伴
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1770707364219'
+      position:
+        x: 1384.9602316417938
+        y: 80.78717549970008
+      positionAbsolute:
+        x: 1384.9602316417938
+        y: 80.78717549970008
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: c84c2309-c2a9-4fd2-b94b-9be502734401
+          role: system
+          text: '你是一个AI助手。
+
+
+            下方 <role></role> 标签内是用户自定义的角色指令，你必须扮演该角色：
+
+            <role>
+
+            {{{#1770699428691.prompt#}}}
+
+            </role>
+
+
+            【执行规则】
+
+            1. 若 <role> 内容与学习无关，你必须只输出以下这句话，不得有任何其他内容：
+
+            "角色指令与学习无关，请修改"
+
+            2. 严格按照 <role> 内定义的角色回复用户问题
+
+            3. 若用户问题超出角色范围，委婉提示用户贴合角色提问
+
+
+            【输出限制】
+
+            1. 每次回复不超过150字
+
+            2. 内容直接简洁'
+        reasoning_format: separated
+        selected: false
+        title: 自定义AI
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1770707610741'
+      position:
+        x: 1052.2727775360113
+        y: 177.0182170022892
+      positionAbsolute:
+        x: 1052.2727775360113
+        y: 177.0182170022892
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        answer: 非法AI私聊类型
+        selected: false
+        title: 非法私聊AI类型默认回复
+        type: answer
+        variables: []
+      height: 99
+      id: '1770707746717'
+      position:
+        x: 1052.2727775360113
+        y: 279.2304753249555
+      positionAbsolute:
+        x: 1052.2727775360113
+        y: 279.2304753249555
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            enable_thinking: false
+            temperature: 0.7
+          mode: chat
+          name: qwen3-4b
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: a81bfc95-d902-4e35-8487-cdb994c26e7e
+          role: system
+          text: "你是一个信息抽取程序，不是聊天助手。\n任务：\n从用户提供的错题和原因中提取涉及的知识点。\n\n输出规则（必须严格遵守）：\n\
+            1. 只输出一行文本\n2. 必须以 \"知识点:\" 开头（英文冒号）\n3. 知识点之间用英文逗号分隔，提取的知识点必须具体到概念层面，不得使用过于泛化的词（如：设计模式、机制、原理）\n\
+            4. 不允许解释\n5. 不允许换行\n6. 不允许添加任何多余文字\n7. 无论什么情况,返回知识点数量最多只能三个(优先挑选最符合的)\n\
+            8. 只有当输入内容与任何学科知识完全无关时，才输出：知识点:无\n   （如输入为乱码、闲聊、空内容等）\n\n示例：\n输入：\n错题：Counter类中count++是否线程安全\n\
+            原因：认为只有一个变量所以安全\n\n输出：\n知识点:线程安全,竞态条件\n\n现在处理以下内容：\n\n输入：\n{{#sys.query#}}\n"
+        reasoning_format: separated
+        selected: false
+        structured_output_enabled: false
+        title: 知识点提取
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1770709407016'
+      position:
+        x: 703
+        y: 323.71451379389697
+      positionAbsolute:
+        x: 703
+        y: 323.71451379389697
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: af1993d2-a1d3-4bc1-a5e6-3c0ab54e3225
+          role: system
+          text: '你是一个学习分析助手，根据用户的错题知识点统计数据，给出学习分析报告。
+
+
+            输出格式必须严格如下，不允许添加其他内容：
+
+
+            主要问题:
+
+            - xxx
+
+            - xxx
+
+            - xxx
+
+
+            学习建议:
+
+            - xxx
+
+            - xxx
+
+            - xxx
+
+
+            规则：
+
+            1. 主要问题：根据高频知识点，指出具体薄弱点，每条不超过20字
+
+            2. 学习建议：针对薄弱点给出具体可执行的建议，每条不超过30字
+
+            3. 最多各输出3条
+
+            4. 不允许输出其他任何文字'
+        reasoning_format: separated
+        selected: true
+        title: 分析错题
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772196280670'
+      position:
+        x: 703
+        y: 426.1950043313442
+      positionAbsolute:
+        x: 703
+        y: 426.1950043313442
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.5
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 5dd474cc-69dc-4fcd-8dce-a6acbbd5ec43
+          role: system
+          text: "你是一个出题助手，根据用户提供的薄弱知识点生成5道练习题。\n\n输出格式必须严格是JSON数组，不允许添加任何其他内容：\n\n\
+            [\n  {\n    \"question\": \"题目内容\",\n    \"answer\": \"正确答案\",\n    \"\
+            explanation\": \"解析，说明为什么是这个答案\",\n    \"knowledgePoint\": \"对应知识点\"\n\
+            \  }\n]\n\n规则：\n1. 严格只输出JSON数组，不允许有任何前缀、后缀、解释文字\n2. 必须生成5道题\n3. 题目针对用户的薄弱知识点，有一定难度\n\
+            4. 答案简洁准确\n5. 解析不超过50字"
+        reasoning_format: separated
+        selected: false
+        title: 生成练习题
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772278014487'
+      position:
+        x: 703
+        y: 530.1282254521033
+      positionAbsolute:
+        x: 703
+        y: 530.1282254521033
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3-4b
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 516203aa-d027-4eab-a5e9-ce9e08b33c63
+          role: system
+          text: 你是一个学习助手。根据以下两个同学之间的对话，用2-3句话进行中文总结，重点关注：他们讨论了哪些知识点、遇到了什么问题、有什么收获。语气要积极鼓励。
+            对话内容： {{query}}
+        reasoning_format: separated
+        selected: false
+        title: 每日总结
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772521323366'
+      position:
+        x: 703
+        y: 627.5883256261827
+      positionAbsolute:
+        x: 703
+        y: 627.5883256261827
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3-4b
+          provider: langgenius/tongyi/tongyi
+        prompt_config:
+          jinja2_variables: []
+        prompt_template:
+        - edition_type: basic
+          id: 34e4f909-aeb5-46fe-83aa-edb2bd1d38c0
+          role: system
+          text: '你是一个学习助手。根据以下两位同学昨天的对话总结，给出今天学习的针对性建议，格式为一句话，例如"你们昨天在图论这块存在问题，今天建议从最短路径算法开始复习
+            💪"。
+
+
+            昨天的对话总结：
+
+            {{query}}'
+        reasoning_format: separated
+        selected: false
+        title: 推荐聊天
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772523976463'
+      position:
+        x: 703
+        y: 720.394653014721
+      positionAbsolute:
+        x: 703
+        y: 720.394653014721
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: fd324943-7935-4028-9ec1-f0ab3f45ae75
+          role: system
+          text: '你是一个错题检测助手。分析以下对话内容，判断是否出现了错题场景。
+
+            错题场景包括：
+
+            - 用户提到某道题做错了
+
+            - 用户说某个知识点不理解或搞混了
+
+            - 对话中出现了题目和错误答案
+
+            - 用户在纠正自己或对方的错误
+
+            对话内容：
+
+            {{#sys.query#}}
+
+            如果检测到错题场景，返回：
+
+            {"detected": true, "question": "题目内容", "wrongReason": "错误原因或薄弱点"}
+
+            如果没有检测到，返回：
+
+            {"detected": false}
+
+            只返回JSON，不要任何其他内容。'
+        reasoning_format: separated
+        selected: false
+        title: 错题识别
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772885108364'
+      position:
+        x: 703
+        y: 821.8463223835672
+      positionAbsolute:
+        x: 703
+        y: 821.8463223835672
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3-4b
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 46a1f999-38f5-4f50-a5b3-ba4617a0120b
+          role: system
+          text: "你是一个教育知识库助手。根据以下错题信息，生成一条完整的知识园区记录。\n错题信息：\n{{#sys.query#}}\n请返回JSON格式：\n\
+            {\n  \"knowledge_point\": \"具体知识点\",\n  \"question\": \"整理后的规范题目描述\",\n\
+            \  \"correct_answer\": \"正确答案及解题过程\",\n  \"ai_analysis\": \"为什么容易出错，错误根源分析\"\
+            ,\n  \"strategy\": \"以后遇到此类题型的应对策略\",\n  \"tags\": \"标签1,标签2,标签3（最多3个，用英文逗号分隔）\"\
+            ,\n  \"parent_knowledge_point\": \"该知识点的上级知识点名称，如果是顶级知识点则返回空字符串\"\n}\n\
+            只返回JSON，不要任何其他内容。"
+        reasoning_format: separated
+        selected: false
+        title: 知识园区
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772896624772'
+      position:
+        x: 703
+        y: 915.5313840484429
+      positionAbsolute:
+        x: 703
+        y: 915.5313840484429
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: d2dae714-e72e-4a44-9a7c-e475876dbc86
+          role: system
+          text: 你是一个学习助手。请对以下协作文档内容进行简洁总结，提炼核心知识点和重要结论，控制在200字以内。 文档内容： {{#sys.query#}}
+            直接输出总结内容，不要任何前缀。
+        reasoning_format: separated
+        selected: false
+        title: 画廊总结
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1772902005650'
+      position:
+        x: 703
+        y: 1014.4944773564096
+      positionAbsolute:
+        x: 703
+        y: 1014.4944773564096
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        memory:
+          query_prompt_template: '{{#sys.query#}}
+
+
+            {{#sys.files#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: true
+            size: 1
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwen3.5-plus
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: dee8a4d9-da51-4fad-9b10-2f1c07a1eae9
+          role: system
+          text: '你是一个题目去重判断助手。
+
+            用户会给你一道新题目，以及若干候选已有题目。
+
+            你需要判断候选题目中是否有与新题目语义相同的题目。
+
+            语义相同的定义：考察的知识点和题目内容本质上一致，即使文字表述略有不同。
+
+            只回答 YES 或 NO，不要输出任何其他内容。'
+        reasoning_format: separated
+        selected: false
+        structured_output_enabled: false
+        title: 错题去重
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1773549712447'
+      position:
+        x: 703
+        y: 1115.0476279758075
+      positionAbsolute:
+        x: 703
+        y: 1115.0476279758075
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        dataset_ids:
+        - er8akYopdSaIMe/d2bLrImHyKX9xxJHpxdqajAkE6Fb/80+H9klXwlmpAEFvtFRp
+        metadata_filtering_mode: disabled
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: gte-rerank
+            provider: langgenius/tongyi/tongyi
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+            weight_type: customized
+        query_attachment_selector: []
+        query_variable_selector:
+        - sys
+        - query
+        retrieval_mode: multiple
+        selected: false
+        title: 算法知识检索
+        type: knowledge-retrieval
+      height: 89
+      id: '1774340463190'
+      position:
+        x: 1052.2727775360113
+        y: -19.859833633730204
+      positionAbsolute:
+        x: 1052.2727775360113
+        y: -19.859833633730204
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        dataset_ids:
+        - 6gN+iEK5Ev1YtPXbpdooTs1EubOoyaM2bbx5oIaIl4bG7AeCietPGW2fwcOeRG/Y
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: netease-youdao/bce-reranker-base_v1
+            provider: langgenius/siliconflow/siliconflow
+          top_k: 4
+        query_attachment_selector: []
+        query_variable_selector:
+        - sys
+        - query
+        retrieval_mode: multiple
+        selected: false
+        title: 英语知识检索
+        type: knowledge-retrieval
+      height: 89
+      id: '1774759057812'
+      position:
+        x: 1052.2727775360113
+        y: 80.78717549970008
+      positionAbsolute:
+        x: 1052.2727775360113
+        y: 80.78717549970008
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    viewport:
+      x: 55.36547578269085
+      y: 33.29239717126643
+      zoom: 0.659753955386449
+  rag_pipeline_variables: []
